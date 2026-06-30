@@ -81,8 +81,6 @@ if submitted:
     ]
     )
 
-    #st.write(response.choices[0].message.content)
-
     things = (json.loads(response.choices[0].message.content))["recommendations"]
     st.header("These are your game reccomendations:", False)
     for thing in things:
